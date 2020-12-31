@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="@color/white"
+    android:orientation="horizontal">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal">
+    <View
+        android:id="@+id/vertical_line"
+        android:layout_width="7dp"
+        android:layout_height="match_parent"
+        android:background="#778899"
+        android:layout_marginStart="30dp"
+        />
+    <View
+        android:id="@+id/horizonatl_line"
+        android:layout_width="30dp"
+        android:layout_height="7dp"
+        android:background="#778899"
+        android:layout_gravity="center"
+        />
+    <LinearLayout
+        android:id="@+id/outer_linear_layout"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/inner_linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="14dp"
+            android:layout_marginBottom="14dp"
+            android:layout_marginTop="14dp"
+            android:background="@color/white"
+            android:elevation="1dp"
+            android:orientation="horizontal">
+
+            <View
+                android:id="@+id/vertical_thick_line"
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                />
+
+            <ImageView
+                android:id="@+id/tick_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingStart="10dp"
+                android:src="@drawable/ic_done"/>
+
+            <TextView
+                android:id="@+id/chapter_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="1st Chapter"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:layout_marginStart="5dp"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
